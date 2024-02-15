@@ -1,17 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace JSON_Serializer__Custom_
+﻿namespace JSON_Serializer__Custom_
 {
     public class Course
     {
-
         public object Title;
-
         public List<Topic> Top { get; set; }
         public Instructor Teacher { get; set; }
         public List<Topic> Topics { get; set; }
@@ -35,10 +26,7 @@ namespace JSON_Serializer__Custom_
 
         public EnumValues myEnumYes { get; set; }
         public EnumValues myEnumOkay;
-
         public StructData myStruct;
-
-
         public List<AdmissionTest> Tests { get; set; }
     }
 
@@ -65,10 +53,8 @@ namespace JSON_Serializer__Custom_
         public short short1 { get; set; }
         public short short2;
 
-
         public ushort ushort1 { get; set; }
         public ushort ushort2;
-
 
         public uint uint1 { get; set; }
         public uint uint2;
@@ -76,11 +62,8 @@ namespace JSON_Serializer__Custom_
         public float float1 { get; set; }
         public float float2;
 
-
         public char char2;
-
         public char char1 { get; set; }
-
 
         public string Title { get; set; }
         public string id;
@@ -93,7 +76,6 @@ namespace JSON_Serializer__Custom_
         public int idx;
         public int DurationInHour { get; set; }
         public string LearningObjective { get; set; }
-
     }
 
     public class Instructor
@@ -119,5 +101,4 @@ namespace JSON_Serializer__Custom_
         public string Extension { get; set; }
         public string CountryCode { get; set; }
     }
-
 }

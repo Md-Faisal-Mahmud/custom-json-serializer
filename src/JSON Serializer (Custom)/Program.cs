@@ -1,19 +1,12 @@
 ﻿using JSON_Serializer__Custom_;
 
-using System;
-using System.Collections.Generic;
-using System.Reflection;
-using System.Security.Cryptography.X509Certificates;
-
 class Program
 {
     public static void Main(string[] args)
     {
-
-
         Course course = new Course();
 
-        //course.Title = "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj";
+        //course.Title = ".net";
         //course.Title = 111111111;
         course.Title = 743894.343;
 
@@ -29,9 +22,6 @@ class Program
 
                          char1 = 'a',
                          char2 = 'b',
-
-
-
 
                         Title= "Title456",
                         id = null,
@@ -65,11 +55,6 @@ class Program
                     }
         };
 
-
-
-
-
-
         course.Fees1 = 30000;
         course.Fees2 = 30000;
         course.Fees3 = 30000;
@@ -77,11 +62,8 @@ class Program
         course.Fees5 = 30000;
         course.Fees6 = 30000.343M;
 
-
         course.IsValid1 = true;
         course.IsValid2 = false;
-
-
         //course.myEnumYes = Course.EnumValues.yes;
         course.myEnumOkay = Course.EnumValues.okays;
 
@@ -90,7 +72,6 @@ class Program
             x = 3,
             y = 4
         };
-
 
         course.Teacher = new Instructor()
         {
@@ -111,23 +92,20 @@ class Program
             },
             PhoneNumbers = new List<Phone>
             {
-
-                        new Phone()
-                        {
-                            Number = "12343435",
-                            Extension = "017",
-                            CountryCode = "+880"
-                        },
-                        new Phone()
-                        {
-                            Number = "12367891",
-                            Extension = null,
-                            CountryCode = "+880"
-                        }
-                    }
+                new Phone()
+                {
+                    Number = "12343435",
+                    Extension = "017",
+                    CountryCode = "+880"
+                },
+                new Phone()
+                {
+                    Number = "12367891",
+                    Extension = null,
+                    CountryCode = "+880"
+                }
+            }
         };
-
-
 
         course.Topics = new List<Topic>
                 {
@@ -148,10 +126,6 @@ class Program
                     }
                 };
 
-
-
-
-
         course.Tests = new List<AdmissionTest>
                 {
                     new AdmissionTest
@@ -168,12 +142,7 @@ class Program
                     }
                 };
 
-
         string json = JsonFormatter.Convert(course);
         Console.WriteLine(json);
-
     }
 }
-
-
-
